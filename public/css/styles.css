@@ -180,6 +180,7 @@ span {
 }
 
 /* Tablet */
+
 @media (min-width: 735px) {
   header {
     height: 100vh;
@@ -336,4 +337,66 @@ span {
   .styles_padding {
     padding-bottom: 10px;
   }
+
+  .order1 {
+    order: 1;
+  }
+
+  .order2 {
+    order: 3;
+  }
+
+  .order3 {
+    order: 2;
+  }
+
+  .order4 {
+    order: 4;
+  }
+}
+
+@media (min-width: 1068px) {
+  .title {
+    width: 544px;
+  }
+
+  .container_title_tablet_dest {
+    width: 92%;
+  }
+
+  .card_img {
+    /*     background-image: url(../image/background.png);
+    background-size: 1074px;
+    height: 490px;
+    position: relative;
+    bottom: 43px; */
+    width: 82%;
+    /*   margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end; */
+  }
+
+  .icons_border {
+    padding: 7px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+
+  .p_weight {
+    font-size: 15px;
+  }
+
+  span {
+    font-size: 15px;
+  }
+
+  .p_size {
+    font-size: 15px;
+  }
+
+  /* Notas:
+  Consulta=> Al hacer uso de las Querys en una clae o etequita,
+   vuelvo a poner sus valores originales o solo modigico las medidas que desee?; */
 }
