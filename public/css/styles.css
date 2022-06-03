@@ -11,14 +11,22 @@
 .container-box-card {
   background-color: #fff;
 }
+
 .title {
   font-size: 32px;
   margin-top: 48px;
   padding-left: 32px;
   padding-right: 32px;
-  /*  text-align: center; */
   display: flex;
   justify-content: center;
+}
+
+.text-tablet {
+  display: none;
+}
+
+.icons_tablet_dest {
+  display: none;
 }
 
 .card_img {
@@ -28,6 +36,13 @@
   background-position: center;
   width: 100%;
   height: 250px;
+}
+
+ul {
+  display: none;
+}
+li {
+  display: none;
 }
 
 .container-parrafo {
@@ -46,6 +61,9 @@
   margin-bottom: 32px;
   width: 257px;
 }
+.parrafo-tablet {
+  display: none;
+}
 
 /* main */
 
@@ -56,6 +74,9 @@ h2 {
   font-size: 32px;
   margin-bottom: 40px;
   text-align: center;
+}
+.text_title {
+  display: none;
 }
 
 .container-descriptions {
@@ -111,4 +132,208 @@ span {
 
 .m-b {
   margin-bottom: 60px;
+}
+
+/* Media queries - Mobile First */
+
+/* Mobile */
+@media (min-width: 414px) {
+  .text-tablet {
+    display: none;
+  }
+
+  .parrafo {
+    display: none;
+  }
+
+  .parrafo-tablet {
+    display: block;
+    font-size: 12px;
+    padding-right: 16px;
+    padding-left: 16px;
+    text-align: center;
+    margin-bottom: 32px;
+    width: 342px;
+  }
+}
+
+@media (min-width: 734px) {
+  .title {
+    font-size: 28px;
+  }
+  .text-tablet {
+    display: none;
+  }
+
+  .container-descriptions {
+    width: 65%;
+    margin: auto;
+  }
+
+  .card_img {
+    height: 470px;
+  }
+
+  .parrafo-tablet {
+    width: 640px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 735px) {
+  header {
+    height: 100vh;
+  }
+  .text-tablet {
+    display: block;
+  }
+
+  .card_img {
+    background-image: url(../image/background.png);
+    background-size: 1074px;
+    height: 480px;
+    position: relative;
+    bottom: 43px;
+    width: 97%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .container_title_tablet_dest {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .title {
+    display: flex;
+    width: 414px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
+    align-items: center;
+    font-weight: bolder;
+  }
+
+  .icons_tablet_dest {
+    display: block;
+  }
+
+  .container_title_tablet_dest {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+  }
+
+  .text-tablet {
+    margin-left: 20px;
+    font-size: 28px;
+    color: #c5c5c7;
+    font-weight: bolder;
+  }
+
+  .container-parrafo {
+    display: none;
+  }
+
+  .text_lates {
+    width: 115px;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    display: block;
+    margin-left: 40px;
+  }
+  li {
+    display: block;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .icons_border {
+    padding: 4px;
+    border-style: solid;
+    border-color: #c5c5c7;
+    border-radius: 50%;
+  }
+
+  .icons_text {
+    font-size: 16px;
+    margin-left: 20px;
+  }
+
+  .icons_color {
+    background-color: #fff;
+  }
+  /* #1D1D1F - color verdadero del icono, antes de pasarlo a naranja*/
+
+  .text_title {
+    display: block;
+    color: #c5c5c7;
+    font-size: 28px;
+    font-weight: bolder;
+  }
+
+  .icons_delete {
+    display: none;
+  }
+
+  .container_title_down_tablet_dest {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .title_tablet_down {
+    display: flex;
+    align-items: center;
+    width: 455px;
+    justify-content: space-evenly;
+  }
+
+  h2 {
+    margin-bottom: 40px;
+    font-size: 28px;
+  }
+
+  h4 {
+    padding-bottom: 10px;
+  }
+
+  .container-descriptions {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    align-items: baseline;
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 80px;
+  }
+
+  summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .descriptions {
+    margin-right: 32px;
+  }
+
+  .first_p {
+    padding-top: 20px;
+  }
+
+  .styles_padding {
+    padding-bottom: 10px;
+  }
 }
