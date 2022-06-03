@@ -21,6 +21,10 @@
   justify-content: center;
 }
 
+.icons_tablet_down {
+  display: none;
+}
+
 .text-tablet {
   display: none;
 }
@@ -31,11 +35,11 @@
 
 .card_img {
   background-image: url(../image/background-mobile.png);
-  background-size: contain;
+  /* background-size: contain; */
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 250px;
+  height: 420px;
 }
 
 ul {
@@ -90,7 +94,6 @@ summary {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
 }
 
 h4 {
@@ -171,7 +174,7 @@ span {
   }
 
   .card_img {
-    height: 470px;
+    height: 431px;
   }
 
   .parrafo-tablet {
@@ -262,15 +265,15 @@ span {
     border-radius: 50%;
   }
 
+  .icons_border:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+
   .icons_text {
     font-size: 16px;
     margin-left: 20px;
   }
-
-  .icons_color {
-    background-color: #fff;
-  }
-  /* #1D1D1F - color verdadero del icono, antes de pasarlo a naranja*/
 
   .text_title {
     display: block;
@@ -296,6 +299,10 @@ span {
     align-items: center;
     width: 455px;
     justify-content: space-evenly;
+  }
+
+  .icons_tablet_down {
+    display: block;
   }
 
   h2 {
@@ -365,16 +372,7 @@ span {
   }
 
   .card_img {
-    /*     background-image: url(../image/background.png);
-    background-size: 1074px;
-    height: 490px;
-    position: relative;
-    bottom: 43px; */
     width: 82%;
-    /*   margin: auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end; */
   }
 
   .icons_border {
@@ -395,8 +393,54 @@ span {
   .p_size {
     font-size: 15px;
   }
+}
 
-  /* Notas:
-  Consulta=> Al hacer uso de las Querys en una clae o etequita,
-   vuelvo a poner sus valores originales o solo modigico las medidas que desee?; */
+/* Desktop */
+
+@media (min-width: 1069px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  li {
+    margin-right: 25px;
+  }
+
+  .container_icons_interactivo {
+    display: flex;
+    flex-direction: row;
+    margin-top: 75px;
+  }
+
+  .card_img {
+    align-items: center;
+  }
+
+  .icons_text {
+    margin-left: 15px;
+  }
+
+  .li_lates {
+    margin-top: 10px;
+  }
+
+  h4 {
+    padding-bottom: 10px;
+  }
+
+  .container-descriptions {
+    width: 96%;
+  }
+
+  .first_p {
+    padding-top: 24px;
+  }
+
+  .styles_padding {
+    padding-bottom: 12px;
+  }
+
+  .descriptions {
+    margin-right: 40px;
+  }
 }
