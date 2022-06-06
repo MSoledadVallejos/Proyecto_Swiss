@@ -6,6 +6,10 @@
   font-family: Satoshi;
 }
 
+body {
+  width: 100%;
+}
+
 /* header */
 
 .container-box-card {
@@ -169,7 +173,7 @@ span {
   }
 
   .container-descriptions {
-    width: 65%;
+    /* width: 65%; */
     margin: auto;
   }
 
@@ -185,6 +189,12 @@ span {
 /* Tablet */
 
 @media (min-width: 735px) {
+  body {
+    width: 100%;
+    padding: 20px;
+    margin: 0px auto;
+  }
+
   header {
     height: 100vh;
   }
@@ -198,7 +208,6 @@ span {
     height: 480px;
     position: relative;
     bottom: 43px;
-    width: 97%;
     margin: auto;
     display: flex;
     justify-content: flex-start;
@@ -226,8 +235,8 @@ span {
   }
 
   .container_title_tablet_dest {
-    padding-left: 20px;
-    padding-right: 20px;
+    /*  padding-left: 20px;
+    padding-right: 20px; */
     margin-top: 40px;
   }
 
@@ -280,6 +289,7 @@ span {
     color: #c5c5c7;
     font-size: 28px;
     font-weight: bolder;
+    margin-right: 20px; /* hhhhh */
   }
 
   .icons_delete {
@@ -298,7 +308,7 @@ span {
     display: flex;
     align-items: center;
     width: 455px;
-    justify-content: space-evenly;
+    /*  justify-content: space-evenly; */
   }
 
   .icons_tablet_down {
@@ -317,7 +327,7 @@ span {
   .container-descriptions {
     display: flex;
     flex-direction: row;
-    width: 95%;
+    /*  width: 95%; */
     align-items: baseline;
     justify-content: center;
     padding-left: 0px;
@@ -371,10 +381,6 @@ span {
     width: 92%;
   }
 
-  .card_img {
-    width: 82%;
-  }
-
   .icons_border {
     padding: 7px;
   }
@@ -392,6 +398,20 @@ span {
 
   .p_size {
     font-size: 15px;
+  }
+
+  /*  main {
+    width: 810px;
+    margin: auto;
+  } */
+  .container-descriptions {
+    /*     width: 97%; */
+  }
+
+  .title_tablet_down {
+    display: flex;
+
+    /* justify-content: space-evenly; */
   }
 }
 
@@ -429,7 +449,7 @@ span {
   }
 
   .container-descriptions {
-    width: 96%;
+    /* width: 96%; */
   }
 
   .first_p {
@@ -442,5 +462,41 @@ span {
 
   .descriptions {
     margin-right: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    width: 80%;
+    padding: 20px;
+    margin: 0px auto;
+  }
+
+  .card_img {
+    background-size: 1192px;
+    height: 534px;
+  }
+
+  .title_tablet_dest {
+    margin-left: 33px;
+  }
+
+  .icons_text {
+    margin-left: 20px;
+  }
+  .icons_border {
+    padding: 15px;
+  }
+
+  li {
+    margin-right: 30px;
+  }
+
+  .container_title_tablet_dest {
+    width: 100%;
+  }
+
+  .title {
+    width: 400px;
   }
 }
